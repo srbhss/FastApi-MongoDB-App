@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pymongo import MongoClient 
-from .user import router as api_router
-from .database import connect_to_mongo, close_mongo_connection
+from routers.user import router as api_router
+from db.database import connect_to_mongo, close_mongo_connection
 from motor.motor_asyncio import AsyncIOMotorClient
 
 
